@@ -1,16 +1,13 @@
-# 🐝 Formation <a href="https://www.patreon.com/minamarkham"><img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="100"></a>
+# FoRmation
 
-![Let's get in formation](assets/formation.gif)
-> Formation is a shell script to set up a macOS laptop for design and development.
-
-It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages based on what is already installed on the machine.
+> FoRmation is a shell script to set up a macOS laptop for design, development, and R. It is entirely based on Mina Markham's excellent [Formation](https://github.com/minamarkham/formation). It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages based on what is already installed on the machine.
 
 ## Install
 
 Download the script:
 
 ```sh
-git clone git@github.com/minamarkham/formation.git && cd formation
+git clone git@github.com/ajaypillarisetti/formation.git && cd formation
 ```
 
 Review the script (please don't run scripts you don't understand):
@@ -25,19 +22,18 @@ Slay:
 cd formation
 ./slay 2>&1 | tee ~/slay.log
 ```
-Just follow the prompts and you’ll be fine. 👌
+Just follow the prompts and you’ll be fine.
 
 :warning: Warning: I advise against running [this script](slay) unless you understand what it’s doing to your computer.
 
-I created this based on my own preferences; your mileage may vary.
+Mina created this based on her own preferences; I updated it to include things I need for work, including R, Creative Cloud, and other stuff. Your mileage will vary.
 
 Once the script is done, quit and relaunch Terminal.
 
 It is highly recommended to run the script regularly to keep your computer up to date.
 
-Your last Formation run will be saved to `~/slay.log`. To review it, run `less ~/slay.log`.
+Your last FoRmation run will be saved to `~/slay.log`. To review it, run `less ~/slay.log`.
 
-That's it! :sparkles:
 
 ## What it sets up
 The setup process will install:
@@ -52,25 +48,12 @@ The setup process will install:
 </details>
 
 <details>
-<summary>Package Managers:</summary>
-
-* [NVM](https://github.com/creationix/nvm/) for managing and installing multiple versions of [Node.js](http://nodejs.org/) and [npm](https://www.npmjs.org/)
-* [Rbenv](https://github.com/sstephenson/rbenv) for managing versions of Ruby
-* [Yarn](https://yarnpkg.com/en/) for managing JavaScript packages
-</details>
-
-<details>
 <summary>CLI Tools & Utilities:</summary>
 
-* [asciinema](https://asciinema.org/) for recording terminal sessions
-* [Gulp](https://gulpjs.com/) the streaming build system
-* [Hotel](https://github.com/typicode/hotel), a simple process manager for developers
 * [Hub](http://hub.github.com/) for interacting with the GitHub API
-* [hugo](https://gohugo.io/), an open-source static site generator
-* [ImageMagick](http://www.imagemagick.org/) to create, edit, compose, or convert bitmap images
 * [mas](https://github.com/mas-cli/mas) Mac App Store command line interface
+* [pandoc](https://pandoc.org)
 * [Tig](https://github.com/jonas/tig) text-mode interface for git
-* [Vagrant](https://www.vagrantup.com/) for development environments
 </details>
 
 ### Apps
@@ -78,30 +61,44 @@ The setup process will install:
 <details>
 <summary>Productivity</summary>
 
-* [Airmail](http://airmailapp.com/) for a better mail client.
+
 * [Alfred](https://www.alfredapp.com/) for increased productivity and efficiency with macOS.
+* [Better Blocker](https://better.fyi) for privacy.
+* [Endnote](https://endnote.com) for citation management. 
 * [Fantastical](https://flexibits.com/fantastical) for a better calendar.
+* [iWork](https://www.apple.com/iwork/) mainly for Keynote
+* [Magnet](https://magnet.crowdcafe.com) for managing windows on your Mac.
+* [Microsoft Office](https://products.office.com/en-us/mac/microsoft-office-for-mac)
+* [Papers](https://www.papersapp.com) for better citation management. 
+* [Soulver](https://soulver.app) for a better calculator. 
+* [Spark](http://sparkmailapp.com/) for a better mail client.
 * [Things](https://culturedcode.com/things/) for getting things done.
+* [Toggl](https://toggl.com) for tracking time. 
+* [Tweetbot](https://tapbots.com/tweetbot/mac/) for non-productivity.
 </details>
 
 <details>
 <summary>Development</summary>
 
-* [Dash](https://kapeli.com/dash) offline access to API documentation sets
-* [ForkLift](https://www.binarynights.com/forklift/) FTP client
-* [Hyper](https://hyper.is/) for an alternative terminal.
-* [ImageOptim](https://imageoptim.com/mac) for image optimization.
-* [iTerm](https://www.iterm2.com/) for a better terminal.
+* [Apple Remote Desktop](https://www.apple.com/remotedesktop/) lol check out that website. 
+* [BasicTex](http://www.tug.org/mactex/morepackages.html) for a smaller TeX installation.
+* [Coda](https://panic.com/coda/) for old-school web development. 
 * [Kaleidoscope](https://www.kaleidoscopeapp.com/) for a better diff tool.
-* [Virtual Box](https://www.virtualbox.org/) powerful virtualization tool
-* [Visual Studio Code](https://code.visualstudio.com/) IDE
+* [Launch Control](https://www.soma-zone.com/LaunchControl/) a GUI for controling launchd.
+* [Parallels](https://www.parallels.com/) for virtualization. Expensive, worth it?
+* [R](http://r-project.org)
+* [R-Studio](https://rstudio.com) Sometimes you need it.
+* [Reggy](http://reggyapp.com) for testing regular expressions. 
+* [SequelPro](https://www.sequelpro.com) for MySQL/Maria management.
+* [Sublime Text](https://www.sublimetext.com) for Ajay's favorite text editor.
+* [Transmit](https://panic.com/transmit/) The best FTP client
+* [XQuartz](https://www.xquartz.org)
 </details>
 
 <details>
 <summary>Design</summary>
 
-* [Affinity Designer](https://affinity.serif.com/en-us/designer/)
-* [Affinity Photo](https://affinity.serif.com/en-us/photo/)
+* [Adobe Creative Cloud](https://www.adobe.com/creativecloud.html)
 * [Sip](http://sipapp.io/) collect, organize & share your colors
 * [Sketch](https://www.sketchapp.com/) for design.
 </details>
@@ -109,83 +106,98 @@ The setup process will install:
 <details>
 <summary>Communication</summary>
 
-* [Bear](http://www.bear-writer.com/) for writing and previewing markdown.
 * [Skype](https://www.skype.com/en/) for free calls to friends and family.
 * [Slack](https://slack.com/) where work happens.
-* [Ulysses](https://ulyssesapp.com/) for long-form writing.
+* [Zoom](https://zoom.us)
 </details>
 
 <details>
 <summary>Utilities</summary>
 
 * [1Password](https://1password.com/) for password management.
+* [Bartender](https://www.macbartender.com) for taking control of your menu bar.
+* [Carbon Copy Cloner](https://bombich.com) for automating your backups. 
+* [Coolterm](https://freeware.the-meiers.org) for connecting to serial devices over USB.
 * [Dropbox](https://www.dropbox.com) for cloud file storage.
-* [Divvy](http://mizage.com/divvy/) for better window management.
 * [Encrypto](https://macpaw.com/encrypto) for securing files.
-* [ExpressVPN](https://www.expressvpn.com/) for privacy.
-* [HyperDock](https://bahoom.com/hyperdock/)
-* [Karabiner](https://pqrs.org/osx/karabiner/) for keyboard mapping.
-* [Renamer](https://renamer.com/) for easy file renaming.
+* [iVPN](https://www.ivpn.net) for privacy.
+* [nvALT](https://brettterpstra.com/projects/nvalt/) for all the great notes. 
 </details>
 
 <details>
 <summary>Miscellaneous</summary>
-
-* [Gifox](https://gifox.io/) for GIF making.
-* [Rocket](http://matthewpalmer.net/rocket/) for Slack-like emojis.
-* [Spotify](https://www.spotify.com/) for music.
+* [Beamer](https://beamer-app.com) for sending video from your mac to other screens.
+* [Handbrake](https://handbrake.fr) for encoding video.
+* [Kindle](https://apps.apple.com/us/app/kindle/id405399194?mt=12)
+* [NetNewsWire](https://ranchero.com/netnewswire/) the once and future king of RSS readers.
+* [Plex Media Player](https://www.plex.tv/blog/introducing-the-plex-media-player/) for accessing remove media libraries. 
 * [VLC](http://www.videolan.org/) for a better media player.
 </details>
 
 <details>
 <summary>Browsers</summary>
 
-* [Blisk](https://blisk.io/) for cross-device web development.
 * [Brave](https://brave.com/) for web browsing without ads.
 * [Chrome](https://www.google.com/chrome/browser/desktop/) for fast and free web browsing.
-* [Firefox](https://www.mozilla.org/en-US/firefox/new/) for web browsing and testing.
-* [TorBrowser](https://www.torproject.org/projects/torbrowser.html.en) for super secret web browsing.
 </details>
 
-<sub>See [`swag`](swag) for the full list of apps that will be installed. Adjust it to your personal taste.</sub>
 
-It should take less than 20 minutes to install (depends on your machine).
+<details>
+<summary>R Packages</summary>
+
+* assertthat
+* data.table
+* dbplyr
+* doMC
+* dplyr
+* DT
+* dygraphs
+* ggplot2
+* httr
+* knitr
+* lubridate
+* magrittr
+* nlme
+* plyr
+* purrr
+* readxl
+* reshape2
+* rsconnect
+* shiny
+* shiny.semantic
+* shinydashboard
+* shinyjs
+* stringr
+* testthat
+* tidyr
+* tint
+* tufte
+* writexl
+* zoo
+
+<sub>Also installed all of the package dependencies. Currently writtent to support only packages on CRAN.</sub>
+
+</details>
+
 
 ## 🌶 Just add `~/.hot-sauce`
 
-![I got hot sauce in my bag](assets/hot-sauce.gif)
-
-Your `~/.hot-sauce` is added at the end of the Formation script. Put your customizations there.
+Your `~/.hot-sauce` is added at the end of the FoRmation script. Put your customizations there.
 For example:
 
 ```sh
 #!/usr/bin/env bash
 
-SETUP_ROOT=$HOME/.setup
-
 NERDFONTS_RELEASE=$(curl -L -s -H 'Accept: application/json' https://github.com/ryanoasis/nerd-fonts/releases/latest)
 NERDFONTS_VERSION=$(get_github_version $NERDFONTS_RELEASE)
-
-DIRECTORIES=(
-    $HOME/Desktop/code
-    $HOME/Desktop/design
-    $HOME/Desktop/*dump
-    $HOME/Desktop/GIFs
-    $HOME/Desktop/projects
-    $HOME/Desktop/screenshots
-)
 
 NERDFONTS=(
     SpaceMono
     Hack
     AnonymousPro
+    SourceCodePro
     Inconsolata
 )
-
-step "Making directories…"
-for dir in ${DIRECTORIES[@]}; do
-    mkd $dir
-done
 
 step "Installing fonts…"
 for font in ${NERDFONTS[@]}; do
@@ -197,12 +209,22 @@ for font in ${NERDFONTS[@]}; do
         print_muted "${indent}✓ $font already installed. Skipped."
     fi
 done
+
+step "Installing R Packages"
+for package in $(<$cwd/swag/rpackages); do
+    if [ ! -d /Library/Frameworks/R.framework/Versions/Current/Resources/library/$package ]; then
+        printf "${indent}  [↓] $package "
+        Rscript ~/Documents/formation-pillarisetti/swag/install_packages.R $package
+        print_in_green "${bold}✓ done!${normal}\n"
+    else
+        print_muted "${indent}✓ $package already installed. Skipped."
+    fi
+done
 ```
 
 Write your customizations such that they can be run safely more than once.
-See the `slay` script for examples.
 
-Formation functions such as `step` and `link` can be used in your `~/.hot-sauce`.
+FoRmation functions such as `step` and `link` can be used in your `~/.hot-sauce`.
 
 ## Known Issues
 Cask does not recognize applications installed outside of Homebrew Cask – in the case that the script fails, you can either remove the application from the install list or uninstall the application causing the failure and try again.
