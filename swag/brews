@@ -1,9 +1,4 @@
-asciinema
 git
-tig
-mas
-wget
-hub
+gh
 hugo
-yarn
-rbenv
+vim
