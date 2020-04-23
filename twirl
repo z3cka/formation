@@ -585,6 +585,12 @@ install_npm_packages() {
 	fi
 }
 
+install_vscode_extensions() {
+	echo_install "Installing $1"
+    code --install-extension $1
+    print_in_green "${bold}✓ installed!${normal}\n"
+}
+
 # The releases are returned in the format
 # {"id":3622206,"tag_name":"hello-1.0.0.11",…}
 # we have to extract the tag_name.

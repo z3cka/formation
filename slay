@@ -195,6 +195,17 @@ if [ -e $cwd/swag/npm ]; then
 	done
 fi
 
+###############################################################################
+# INSTALL: vscode extensions
+###############################################################################
+if [ -e $cwd/swag/vscode ]; then
+	chapter "Installing VSCode extensions"
+
+	for extension in $(<$cwd/swag/vscode); do
+	    install_vscode_extensions $extension
+	done
+fi
+
 
 ###############################################################################
 # OPTIONAL: Customizations
