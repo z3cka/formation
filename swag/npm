@@ -2,3 +2,4 @@ eslint::eslint
 gatsby-cli::gatsby
 git-standup::git-standup
 imageoptim-cli::imageOptim
+prisma::prisma
