@@ -2,4 +2,5 @@ eslint::eslint
 gatsby-cli::gatsby
 git-standup::git-standup
 imageoptim-cli::imageOptim
+ncu::npm-check-updates
 prisma::prisma
