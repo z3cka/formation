@@ -480,7 +480,7 @@ ask() {
 }
 
 ###############################################################################
-# 
+#
 ###############################################################################
 
 # return 1 if global command line program installed, else 0
@@ -586,9 +586,13 @@ install_npm_packages() {
 }
 
 install_vscode_extensions() {
-	echo_install "Installing $1"
-    code --install-extension $1
-    print_in_green "${bold}✓ installed!${normal}\n"
+	if ! code --list-extensions | grep -i $1 &> /dev/null; then
+        echo_install "Installing $1"
+        code --install-extension $1 --force > /dev/null
+        print_in_green "${bold}✓ installed!${normal}\n"
+	else
+		print_success_muted "$1 already installed. Skipped."
+	fi
 }
 
 # The releases are returned in the format
