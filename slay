@@ -116,6 +116,14 @@ else
 	print_success_muted "Homebrew already installed. Skipping."
 fi
 
+if ! brew tap | grep -i homebrew/cask-drivers &> /dev/null; then
+	step "Installing Homebrew Drivers Cask…"
+    brew tap homebrew/cask-drivers
+	print_success "Homebrew Drivers Cask installed!"
+else
+	print_success_muted "Homebrew Drivers Cask already installed. Skipping."
+fi
+
 if brew list | grep -Fq brew-cask; then
 	step "Uninstalling old Homebrew-Cask…"
 	brew uninstall --force brew-cask
