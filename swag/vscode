@@ -11,6 +11,8 @@ felipe.nasc-touchbar
 felixfbecker.php-intellisense
 firefox-devtools.vscode-firefox-debug
 formulahendry.auto-close-tag
+formulahendry.vscode-mysql
+gforcedev.ctrl-semicolon
 hookyqr.beautify
 jakebathman.mysql-syntax
 jerriepelser.copy-markdown-as-html
@@ -32,6 +34,7 @@ prisma.prisma
 prisma.vscode-graphql
 prisma.vscode-graphql
 rebornix.ruby
+ritwickdey.liveserver
 vilicvane.es-quotes
 vscode-icons-team.vscode-icons
 wix.vscode-import-cost
