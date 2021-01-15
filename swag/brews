@@ -1,4 +1,9 @@
 byobu
+exif
+exiftags
+exiftool
+exiv2
+gexiv2
 frpc
 gh
 git
@@ -6,6 +11,7 @@ hugo
 htop
 httpie
 mas
+mysql-client
 nmap
 ncdu
 sshuttle
@@ -15,4 +21,5 @@ unrar
 vim
 watch
 wget
+youtube-dl
 
